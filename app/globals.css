@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Inter", serif;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/fonts/helvetica/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Swiper */
+.testimonial-swiper {
+  width: 100%;
+  overflow: visible !important;
+}
+
+.testimonial-swiper .swiper-slide {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial-swiper .swiper-slide-active,
+.testimonial-swiper .swiper-slide-next,
+.testimonial-swiper .swiper-slide-next + .swiper-slide {
+  opacity: 1;
+}
+
+/* Custom navigation styles */
+.prev-button.swiper-button-disabled,
+.next-button.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Ensure proper spacing for partial slides */
+@media (min-width: 768px) {
+  .testimonial-swiper .swiper-slide:last-child {
+    margin-right: 0 !important;
+  }
+}
+
+
