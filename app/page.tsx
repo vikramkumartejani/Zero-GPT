@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Hero from "./components/Hero";
 import WhyChooseZeroGPT from "./components/WhyChooseZeroGPT";
 import AccurateAIDetection from "./components/AccurateAIDetection";
 import ChooseYourPlan from "./components/ChooseYourPlan";
-// import ClientTestimonials from "./components/ClientTestimonials";
+import ClientTestimonials from "./components/ClientTestimonials";
 
 export default function Home() {
   return (
@@ -12,7 +11,7 @@ export default function Home() {
       <WhyChooseZeroGPT/>
       <AccurateAIDetection/>
       <ChooseYourPlan/>
-      {/* <ClientTestimonials/> */}
+      <ClientTestimonials/>
     </main>
   );
 }
