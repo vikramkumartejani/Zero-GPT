@@ -63,7 +63,7 @@ export default function ClientTestimonials() {
         <div className="pb-12 sm:pb-16 md:pb-20 lg:pb-[90px] relative overflow-x-hidden">
             <div className="mb-6 sm:mb-8 md:mb-10 flex flex-col sm:flex-row items-start sm:items-center justify-between px-4 sm:px-6 md:px-8 lg:px-10">
                 <h1 className="text-[#000000] text-2xl sm:text-3xl md:text-[40px] font-extrabold leading-tight sm:leading-[32px] uppercase mb-4 sm:mb-0">
-                    CLIENT Testimonials
+                    CLIENT Testimonial s
                 </h1>
                 <div className="flex gap-2">
                     <button
