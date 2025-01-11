@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import TextDetector from "./TextDetector"
+import TextDetector from "./Home/TextDetector"
 import { useLanguage } from '../contexts/LanguageContext'
 
 const Hero = () => {
