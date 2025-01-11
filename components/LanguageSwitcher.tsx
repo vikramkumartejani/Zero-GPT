@@ -1,5 +1,5 @@
 'use client'
-import { useLanguage } from '../../contexts/LanguageContext'
+import { useLanguage } from '../contexts/LanguageContext'
 import { ChevronDown, Globe } from 'lucide-react'
 import { useState, useRef, useEffect } from 'react'
 

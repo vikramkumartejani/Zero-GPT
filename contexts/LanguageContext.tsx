@@ -18,10 +18,10 @@ type Translations = {
 
 const translations: Translations = {
   en: {
-    home: require('../translations/en/home.json'),
+    home: require('../public/translations/en/home.json'),
   },
   es: {
-    home: require('../translations/es/home.json'),
+    home: require('../public/translations/es/home.json'),
   },
 }
 

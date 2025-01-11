@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import TextDetector from "./TextDetector"
-import { useLanguage } from '../../contexts/LanguageContext'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Hero = () => {
     const { t } = useLanguage()
