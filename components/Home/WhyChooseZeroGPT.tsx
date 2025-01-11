@@ -24,13 +24,13 @@ const features: Feature[] = [
         learnMoreLink: '/',
     },
     {
-        icon: '/assets/ai-detection.svg',
+        icon: '/assets/vocabulary-tracker.svg',
         title: 'Vocabulary Tracker',
         description: 'Track and optimize vocabulary usage.',
         learnMoreLink: '/',
     },
     {
-        icon: '/assets/ai-detection.svg',
+        icon: '/assets/plagiarism-checker.svg',
         title: 'Plagiarism Checker',
         description: 'Verify originality and integrity of content.',
         learnMoreLink: '/',
@@ -44,7 +44,7 @@ const FeatureCard: React.FC<Feature> = ({ icon, title, description, learnMoreLin
         <p className='text-[#333333] text-[16.51px] font-helvetica font-normal leading-[21.67px]'>{description}</p>
         <Link href={learnMoreLink} className='mt-5 flex items-center gap-2 text-[#333333] text-[16.51px] font-medium'>
             Learn More
-            <MoveRight size={18} />
+            <Image src='/assets/why-choose-arrow.svg' alt='arrow' width={16} height={16} />
         </Link>
     </div>
 )
