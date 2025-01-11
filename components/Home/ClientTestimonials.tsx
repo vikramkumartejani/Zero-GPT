@@ -65,18 +65,18 @@ export default function ClientTestimonials() {
                 <h1 className="text-[#000000] text-2xl sm:text-3xl md:text-[40px] font-extrabold leading-tight sm:leading-[32px] uppercase mb-4 sm:mb-0">
                     client Testimonials
                 </h1>
-                <div className="flex gap-2 w-full sm:w-fit justify-end">
+                <div className="flex gap-3 w-full sm:w-fit justify-end">
                     <button
-                        className="prev-button p-2 rounded-full border hover:bg-gray-50 transition-colors"
+                        className="prev-button"
                         aria-label="Previous testimonial"
                     >
-                        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                         <Image src='/assets/client-arrow.svg' alt='arrow' width={40} height={40} className='rotate-180' />
                     </button>
                     <button
-                        className="next-button p-2 rounded-full border hover:bg-gray-50 transition-colors"
+                        className="next-button"
                         aria-label="Next testimonial"
                     >
-                        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                        <Image src='/assets/client-arrow.svg' alt='arrow' width={40} height={40} />
                     </button>
                 </div>
             </div>
