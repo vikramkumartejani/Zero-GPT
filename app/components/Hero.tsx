@@ -24,7 +24,7 @@ const Hero = () => {
                     alt="Background"
                     width={1040}
                     height={672}
-                    className='absolute inset-0 z-20 left-0 top-0'
+                    className='md:block hidden absolute inset-0 z-20 left-0 top-0'
                 />
 
                 {/* Overlay */}
