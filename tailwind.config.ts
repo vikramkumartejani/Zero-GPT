@@ -20,6 +20,7 @@ const config: Config = {
       },
       fontFamily: {
         'helvetica': ['Helvetica', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
       },
     },
   },
