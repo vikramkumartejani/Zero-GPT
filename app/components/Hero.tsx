@@ -10,7 +10,7 @@ const Hero = () => {
         <>
             <div className='relative overflow-hidden'>
                 <Image
-                    src="/assets/hero-bg.png"
+                    src="/assets/hero-bg.webp"
                     alt="Background"
                     width={10000}
                     height={11000}
@@ -20,7 +20,7 @@ const Hero = () => {
                 />
 
                 <img
-                    src="/assets/Vector 1.png"
+                    src="/assets/Vector 1.webp"
                     alt="Background"
                     width={1040}
                     height={672}
