@@ -14,7 +14,6 @@ const Hero = () => {
                     alt="Background"
                     width={10000}
                     height={11000}
-                     loading="lazy"
                     objectFit="contain"
                     priority
                     className='min-w-full min-h-full absolute inset-0 z-10'
