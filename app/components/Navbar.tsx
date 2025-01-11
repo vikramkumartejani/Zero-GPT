@@ -39,7 +39,7 @@ export default function Navbar() {
 
     return (
         <nav className={`fixed top-0 z-50 w-full transition-all duration-300 ${hasScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
-            <div className="mx-auto max-w-[1260px] px-3.5 sm:px-5 transition-all duration-300">
+            <div className="mx-auto max-w-[1340px] px-3.5 sm:px-5 transition-all duration-300">
                 <div className={`flex items-center justify-between ${hasScrolled ? 'py-5' : 'py-5 sm:py-8'}`} >
                     {/* Logo */}
                     <Link href="/">

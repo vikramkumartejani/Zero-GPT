@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
         name: "Mark Hanurry",
         role: "Co Founder",
         image: "/assets/client.svg",
-        quote: "The AI Feels So Intuitive, It&apos;s Like Having A Personal Assistant Available 24/7.",
+        quote: "ZerotGPT has transformed the way I work—quick, accurate, and always insightful!",
         rating: 5,
     },
     {
@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
         name: "Mark Hanurry",
         role: "Co Founder",
         image: "/assets/client.svg",
-        quote: "ZerotGPT Delivers Consistent, High-Quality Results That Have Changed How We Work.",
+        quote: "ZerotGPT has transformed the way I work—quick, accurate, and always insightful!",
         rating: 5,
     },
     {
@@ -45,7 +45,7 @@ const testimonials: Testimonial[] = [
         name: "Mark Hanurry",
         role: "Co Founder",
         image: "/assets/client.svg",
-        quote: "ZerotGPT Delivers Consistent, High-Quality Results That Have Changed How We Work.",
+        quote: "ZerotGPT has transformed the way I work—quick, accurate, and always insightful!",
         rating: 5,
     },
     {
@@ -53,7 +53,7 @@ const testimonials: Testimonial[] = [
         name: "Mark Hanurry",
         role: "Co Founder",
         image: "/assets/client.svg",
-        quote: "ZerotGPT Delivers Consistent, High-Quality Results That Have Changed How We Work.",
+        quote: "ZerotGPT has transformed the way I work—quick, accurate, and always insightful!",
         rating: 5,
     }
 ]
@@ -61,11 +61,11 @@ const testimonials: Testimonial[] = [
 export default function ClientTestimonials() {
     return (
         <div className="pb-12 sm:pb-16 md:pb-20 lg:pb-[90px] relative overflow-x-hidden">
-            <div className="mb-6 sm:mb-8 md:mb-10 flex flex-col sm:flex-row items-start sm:items-center justify-between px-4 sm:px-6 md:px-8 lg:px-10">
+            <div className="mb-6 sm:mb-8 md:mb-10 flex flex-col sm:flex-row items-start sm:items-center justify-between px-4 sm:px-6 md:px-6 lg:px-10">
                 <h1 className="text-[#000000] text-2xl sm:text-3xl md:text-[40px] font-extrabold leading-tight sm:leading-[32px] uppercase mb-4 sm:mb-0">
-                    CLIENT Testimonial s
+                    client Testimonials
                 </h1>
-                <div className="flex gap-2">
+                <div className="flex gap-2 w-full sm:w-fit justify-end">
                     <button
                         className="prev-button p-2 rounded-full border hover:bg-gray-50 transition-colors"
                         aria-label="Previous testimonial"
@@ -106,7 +106,7 @@ export default function ClientTestimonials() {
                         slidesPerView: 2.5,
                     },
                     1536: {
-                        slidesPerView: 2.5,
+                        slidesPerView: 2.7,
                     }
                 }}
                 loop={true}
@@ -117,12 +117,12 @@ export default function ClientTestimonials() {
                 className="testimonial-swiper"
             >
                 {testimonials.map((testimonial) => (
-                    <SwiperSlide key={testimonial.id} className="px-4 sm:px-6 md:px-8 lg:pl-10 lg:pr-0">
+                    <SwiperSlide key={testimonial.id} className="px-4 sm:px-6 md:pl-8 lg:pl-10 lg:pr-0">
                         <div
-                            className="bg-[#E5F4FF8F] rounded-[25px] flex flex-col sm:flex-row items-center w-full gap-4 sm:gap-5 p-6 sm:p-8 md:p-10"
+                            className="bg-[#E5F4FF8F] rounded-[25px] flex flex-col sm:flex-row items-center w-full gap-4 sm:gap-5 p-6 sm:p-8 lg:p-10"
                             style={{ boxShadow: "1px 1px 40px 0px #0000001A" }}
                         >
-                            <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-[180px] md:h-[180px] flex-shrink-0">
+                            <div className="w-32 h-32 sm:w-32 sm:h-32 lg:w-[180px] lg:h-[180px] flex-shrink-0">
                                 <Image
                                     src={testimonial.image}
                                     alt="client"

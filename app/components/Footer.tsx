@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
 
     return (
         <footer className="w-full bg-main-clr text-white">
-            <div className="max-w-[1260px] mx-auto w-full pt-10 md:pt-[55px] px-3.5 sm:px-5 pb-[46px] flex flex-wrap gap-8 justify-between">
+            <div className="max-w-[1340px] mx-auto w-full pt-10 md:pt-[55px] px-3.5 sm:px-5 pb-[46px] flex flex-wrap gap-8 justify-between">
                 <div className="space-y-[25px] w-full sm:w-auto">
                     <Image
                         src="/assets/footer-logo.svg"
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                         width={190}
                         height={37}
                     />
-                    <p className="text-base font-normal sm:max-w-[246px]">
+                    <p className="text-base font-normal sm:max-w-[260px]">
                         Keep up to date with the latest news, updates, and features from
                         ZeroGPT.
                     </p>
