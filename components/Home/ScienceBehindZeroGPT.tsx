@@ -27,7 +27,7 @@ const ScienceBehindZeroGPT: React.FC = () => {
             <div className='max-w-[1340px] mx-auto w-full flex lg:flex-row flex-col items-start justify-between gap-8 lg:gap-4 px-3.5 sm:px-5'>
                 <div className='lg:w-1/2 w-full h-full flex'>
                     <Image
-                        src='/assets/the-science-behind-zeroGPT.svg'
+                        src='/assets/the-science-behind-zeroGPT.webp'
                         alt='the-science-behind-zeroGPT'
                         width={677}
                         height={502}

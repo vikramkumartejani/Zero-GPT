@@ -60,7 +60,7 @@ const AccurateAIDetection: React.FC = () => {
                 </div>
                 <div className='lg:w-1/2 h-full flex mx-auto'>
                     <Image
-                        src='/assets/empowering-users-with-accurate-ai-detection.svg'
+                        src='/assets/empowering-users-with-accurate-ai-detection.webp'
                         alt='empowering-users-with-accurate-ai-detection'
                         width={677}
                         height={484}
