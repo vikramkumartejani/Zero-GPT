@@ -11,15 +11,15 @@ import OurBlogs from "./components/OurBlogs";
 export default function Home() {
   return (
     <main>
-      <Hero/>
-      <WhyChooseZeroGPT/>
-      <AccurateAIDetection/>
-      <ChooseYourPlan/>
-      <ClientTestimonials/>
-      <ScienceBehindZeroGPT/>
-      <StartDetectingNow/>
-      <FrequentlyAskedQuestions/>
-      <OurBlogs/>
+      <Hero />
+      <WhyChooseZeroGPT />
+      <AccurateAIDetection />
+      <ChooseYourPlan />
+      <ClientTestimonials />
+      <ScienceBehindZeroGPT />
+      <StartDetectingNow />
+      <FrequentlyAskedQuestions />
+      <OurBlogs />
     </main>
   );
 }

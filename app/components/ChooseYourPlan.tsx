@@ -19,7 +19,7 @@ interface PricingPlan {
     features: string[];
     buttonText: string;
     buttonColor: string;
-    buttonMargin: string;  // Added this field
+    buttonMargin: string;  
     cardStyle: CardStyle;
 }
 
@@ -39,7 +39,7 @@ const pricingPlans: PricingPlan[] = [
         ],
         buttonText: "Choose Plan",
         buttonColor: "bg-black",
-        buttonMargin: "mt-[182px]",  // Specific margin for basic plan
+        buttonMargin: "mt-[182px]",  
         cardStyle: {
             background: "bg-white",
             textColor: "text-black",
@@ -65,10 +65,10 @@ const pricingPlans: PricingPlan[] = [
         ],
         buttonText: "Choose Plan",
         buttonColor: "bg-[#0AA9CC]",
-        buttonMargin: "mt-9",  // Specific margin for premium plan
+        buttonMargin: "mt-9",  
         cardStyle: {
             background: "bg-[#000B6B]",
-            textColor: "text-white",
+            textColor: "text-white !important",
             borderGradient: "linear-gradient(90.28deg, #001C80 0.26%, #153ABF 30.33%, #2B59FF 99.79%)",
             iconPath: "/assets/plan-arrow-white.svg"
         }
@@ -90,7 +90,7 @@ const pricingPlans: PricingPlan[] = [
         ],
         buttonText: "Choose Plan",
         buttonColor: "bg-black",
-        buttonMargin: "mt-[75px]",  // Specific margin for professional plan
+        buttonMargin: "mt-[75px]",   
         cardStyle: {
             background: "bg-white",
             textColor: "text-black",
