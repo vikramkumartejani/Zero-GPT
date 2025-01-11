@@ -4,8 +4,9 @@ import './globals.css'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { GetServerSideProps } from 'next'
 
-export const getServerSideProps = () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {}
   }
@@ -19,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <LanguageProvider>
         <Navbar />
-        <div key={Math.random()}>
+        <div>
           <Component {...pageProps} />
         </div>
         <Footer />
