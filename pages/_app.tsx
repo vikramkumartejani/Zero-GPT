@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Zero GPT</title>
+        <title>ZeroGPT</title>
       </Head>
       <LanguageProvider>
         <Navbar />

@@ -14,15 +14,17 @@ const Hero = () => {
                     alt="Background"
                     width={10000}
                     height={11000}
+                     loading="lazy"
                     objectFit="contain"
                     priority
                     className='min-w-full min-h-full absolute inset-0 z-10'
                 />
 
                 <img
-                    src="/assets/Vector 1.webp"
+                    src="/assets/bg.webp"
                     alt="Background"
                     width={1040}
+                    loading="lazy"
                     height={672}
                     className='md:block hidden absolute inset-0 z-20 left-0 top-0'
                 />
