@@ -109,17 +109,17 @@ const PricingCard: React.FC<{ plan: PricingPlan }> = ({ plan }) => {
             />
             <div className={`relative ${plan.cardStyle.background} rounded-[10px] z-10 h-full px-3.5 md:px-5 lg:px-8 xl:px-11 pb-5 pt-4 sm:pt-12`}>
                 {plan.badge && (
-                    <h2 className="sm:mt-0 mt-5 bg-[#A9B2FF] rounded-[4px] py-0.5 px-2 w-fit text-[#000B6B] text-base font-normal font-poppins">
+                    <h2 className="sm:mt-0 mt-5 bg-light-blue rounded-[4px] py-0.5 px-2 w-fit text-navy-blue text-base font-normal font-poppins">
                         {plan.badge}
                     </h2>
                 )}
-                <h2 className="mt-4 bg-[#F1F1F1] rounded-md py-1.5 px-4 w-fit text-[#000B33] text-base font-semibold tracking-[0.01em] uppercase leading-[31.33px] font-poppins">
+                <h2 className="mt-4 bg-off-white rounded-md py-1.5 px-4 w-fit text-midnight-blue text-base font-semibold tracking-[0.01em] uppercase leading-[31.33px] font-poppins">
                     {plan.name}
                 </h2>
                 <p className={`mt-[17px] ${plan.cardStyle.textColor} text-base leading-[25px] font-poppins font-light`}>
                     {plan.description}
                 </p>
-                <div className={`my-5 sm:my-7 py-5 w-full border-t border-b ${plan.cardStyle.background === 'bg-white' ? 'border-[#001C80]/30' : 'border-[#FFFFFF]/40'}`}>
+                <div className={`my-5 sm:my-7 py-5 w-full border-t border-b ${plan.cardStyle.background === 'bg-white' ? 'border-deep-blue/30' : 'border-white/40'}`}>
                     <h1 className={`${plan.cardStyle.textColor} text-[50px] sm:text-[60px] font-poppins font-semibold tracking-[-0.52px]`}>
                         ${plan.price}
                     </h1>
@@ -148,7 +148,7 @@ const PricingCard: React.FC<{ plan: PricingPlan }> = ({ plan }) => {
                         </div>
                     ))}
                 </div>
-                <button className={`${plan.buttonMargin} ${plan.buttonColor} w-full h-[56px] rounded-[30px] text-white font-bold text-base`}>
+                <button className={`${plan.buttonMargin} ${plan.buttonColor} transition-all duration-300 ease-in-out hover:scale-95 hover:bg-white hover:text-dark-blue hover:border shadow-inner scale-100 w-full h-[56px] rounded-[30px] text-white font-bold text-base`}>
                     {plan.buttonText}
                 </button>
             </div>

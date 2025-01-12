@@ -2,7 +2,7 @@ import AccurateAIDetection from "@/components/Home/AccurateAIDetection";
 import ChooseYourPlan from "@/components/ChooseYourPlan";
 import ClientTestimonials from "@/components/Home/ClientTestimonials";
 import FrequentlyAskedQuestions from "@/components/FrequentlyAskedQuestions";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Home/Hero";
 import OurBlogs from "@/components/Home/OurBlogs";
 import ScienceBehindZeroGPT from "@/components/Home/ScienceBehindZeroGPT";
 import StartDetectingNow from "@/components/Home/StartDetectingNow";

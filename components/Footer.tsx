@@ -143,11 +143,11 @@ const Footer: React.FC = () => {
                     </div>
                     <div className="mt-6 sm:mt-10">
                         <h1 className="text-lg font-bold">Stay up to date</h1>
-                        <div className="mt-3 sm:mt-5 border border-[#FFFFFF] rounded-[30px] h-[46px] flex items-center justify-between pr-[2px]">
+                        <div className="mt-3 sm:mt-5 border border-white rounded-[30px] h-[46px] flex items-center justify-between pr-[2px]">
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="bg-transparent placeholder:text-[#FFFFFF99] text-white outline-none px-4 w-full"
+                                className="bg-transparent placeholder:text-white/95 text-white outline-none px-4 w-full"
                             />
                             <button className="h-[40px] bg-light-gray rounded-[30px] px-[18px] text-primary">
                                 Subscribe

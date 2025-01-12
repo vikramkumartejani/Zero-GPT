@@ -23,7 +23,7 @@ const features: Feature[] = [
 
 const ScienceBehindZeroGPT: React.FC = () => {
     return (
-        <div className='text-white py-10 md:py-16 bg-[#F6F6F6]'>
+        <div className='text-white py-10 md:py-16 bg-very-light-gray'>
             <div className='max-w-[1340px] mx-auto w-full flex lg:flex-row flex-col items-start justify-between gap-8 lg:gap-4 px-3.5 sm:px-5'>
                 <div className='lg:w-1/2 w-full h-full flex'>
                     <Image
@@ -35,11 +35,11 @@ const ScienceBehindZeroGPT: React.FC = () => {
                     />
                 </div>
                 <div className='lg:w-1/2 lg:max-w-[586px]'>
-                    <h1 className='text-[#151515] text-2xl md:text-3xl lg:text-4xl font-bold font-helvetica uppercase lg:leading-[44px]'>
+                    <h1 className='text-primary text-2xl md:text-3xl lg:text-4xl font-bold font-helvetica uppercase lg:leading-[44px]'>
                         The Science Behind ZeroGPT
                     </h1>
-                    <p className='text-[#151515E5] text-sm sm:text-base font-medium sm:leading-[24px] mt-3.5 md:mt-4 mb-5 md:mb-5'>
-                    ZeroGPT utilizes state-of-the-art machine learning algorithms to provide unmatched accuracy in detecting AI-generated text. 
+                    <p className='text-dark-gray-80 text-sm sm:text-base font-medium sm:leading-[24px] mt-3.5 md:mt-4 mb-5 md:mb-5'>
+                        ZeroGPT utilizes state-of-the-art machine learning algorithms to provide unmatched accuracy in detecting AI-generated text.
                     </p>
                     <div className='space-y-3.5 sm:space-y-4'>
                         {features.map((feature, index) => (
@@ -52,17 +52,17 @@ const ScienceBehindZeroGPT: React.FC = () => {
                                     className='mt-1.5 sm:mt-1 w-[18px] h-[18px] sm:w-[22px] sm:h-[22px]'
                                 />
                                 <div className='space-y-1 sm:space-y-2'>
-                                    <h3 className='text-[#151515] text-lg md:text-xl font-helvetica font-semibold'>
+                                    <h3 className='text-primary text-lg md:text-xl font-helvetica font-semibold'>
                                         {feature.title}
                                     </h3>
-                                    <p className='text-[#151515E5] text-sm sm:text-base font-medium'>
+                                    <p className='text-dark-gray-80 text-sm sm:text-base font-medium'>
                                         {feature.description}
                                     </p>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    <button className='mt-6 sm:mt-5 bg-[#83E9FF] rounded-[30px] h-[45px] sm:h-[52px] px-7 text-dark-blue font-semibold text-base uppercase'>
+                    <button className='mt-6 sm:mt-5 bg-bright-cyan transition-all duration-300 ease-in-out hover:bg-soft-cyan hover:shadow-lg hover:text-white rounded-[30px] h-[45px] sm:h-[52px] px-7 text-dark-blue font-semibold text-base uppercase'>
                         Learn More
                     </button>
                 </div>

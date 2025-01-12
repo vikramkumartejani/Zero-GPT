@@ -52,13 +52,13 @@ const OurBlogs: React.FC = () => {
             <div className='max-w-[1300px] mx-auto w-full'>
                 <div className='flex items-center justify-between'>
                     <h1 className='text-2xl sm:text-4xl font-extrabold text-black uppercase'>Our Blogs</h1>
-                    <button className='bg-[#83E9FF] rounded-[30px] h-[42px] sm:h-[50px] px-8 tracking-[0.04rem] text-dark-blue font-semibold text-base'>
+                    <button className='bg-bright-cyan transition-all duration-300 ease-in-out hover:bg-soft-cyan hover:shadow-lg hover:text-white rounded-[30px] h-[42px] sm:h-[50px] px-8 tracking-[0.04rem] text-dark-blue font-semibold text-base'>
                         See more
                     </button>
                 </div>
 
                 <div className='mt-6 md:mt-[60px] flex items-start lg:flex-row flex-col gap-6 justify-between'>
-                    <div className='border border-[#DFDFDF] rounded-[20px] sm:rounded-[30px] p-2 sm:p-[18px] lg:w-fit w-full'>
+                    <div className='border shadow-md transition-all duration-300 hover:shadow-xl border-soft-gray rounded-[20px] sm:rounded-[30px] p-2 sm:p-[18px] lg:w-fit w-full'>
                         <Image
                             src={blogData.mainPost.image}
                             alt='featured-blog'
@@ -72,10 +72,10 @@ const OurBlogs: React.FC = () => {
                         <h1 className='text-dark-blue font-helvetica font-bold text-[20px] sm:text-[27px] sm:leading-[40px] uppercase'>
                             {blogData.mainPost.title}
                         </h1>
-                        <p className='mt-3 sm:mt-6 text-[#565656] text-base sm:text-[20px] sm:leading-[32px] tracking-[0.03em] font-normal'>
+                        <p className='mt-3 sm:mt-6 text-gray-600 text-base sm:text-[20px] sm:leading-[32px] tracking-[0.03em] font-normal'>
                             {blogData.mainPost.description}
                         </p>
-                        <h3 className='mt-5 sm:mt-8 text-[#0066B2] text-base sm:text-[18px] font-semibold tracking-[0.02em]'>
+                        <h3 className='mt-5 sm:mt-8 text-vibrant-blue hover:underline underline-offset-4 transition-all duration-300 ease-in-out text-base sm:text-[18px] font-semibold tracking-[0.02em]'>
                             {blogData.mainPost.date}. {blogData.mainPost.readTime}
                         </h3>
                     </div>
@@ -83,7 +83,7 @@ const OurBlogs: React.FC = () => {
 
                 <div className='mt-6 sm:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {blogData.subPosts.map((post) => (
-                        <div key={post.id} className='border border-[#DFDFDF] rounded-[20px] sm:rounded-[30px] p-2 sm:p-[18px]'>
+                        <div key={post.id} className='shadow-md transition-all duration-300 hover:shadow-xl border border-soft-gray rounded-[20px] sm:rounded-[30px] p-2 sm:p-[18px]'>
                             <Image
                                 src={post.image}
                                 alt='blog'
@@ -96,10 +96,10 @@ const OurBlogs: React.FC = () => {
                                 {post.title}
                             </h2>
                             <div className='flex items-center justify-between gap-4 pb-2 sm:pb-0'>
-                                <h3 className='text-[#0066B2] text-[16px] leading-[16px] tracking-[0.01em]'>
+                                <h3 className='text-vibrant-blue hover:underline underline-offset-4 transition-all duration-300 ease-in-out text-[16px] leading-[16px] tracking-[0.01em]'>
                                     {post.date}
                                 </h3>
-                                <button>
+                                <button className='scale-110 hover:scale-95 transition-all duration-300 ease-in-out'>
                                     <Image
                                         src='/assets/blog-arrow.svg'
                                         alt='blog-arrow'

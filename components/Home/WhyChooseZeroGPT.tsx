@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { MoveRight } from 'lucide-react'
 
 interface Feature {
     icon: string
@@ -38,15 +37,17 @@ const features: Feature[] = [
 ]
 
 const FeatureCard: React.FC<Feature> = ({ icon, title, description, learnMoreLink }) => (
-    <div className='bg-[#ECF9FE] px-5 py-6 rounded-[20px]' style={{ boxShadow: "0px 2.06px 17.55px 0px #00000026" }}>
+    <div className="bg-light-sky px-5 py-6 rounded-[20px] shadow-custom-shadow hover:shadow-inner transition-all duration-300">
         <Image src={icon} alt={title} width={44} height={36} />
-        <h2 className='text-dark-blue text-xl font-bold leading-[55px] font-helvetica'>{title}</h2>
-        <p className='text-[#333333] text-[16.51px] font-helvetica font-normal leading-[21.67px]'>{description}</p>
-        <Link href={learnMoreLink} className='mt-5 flex items-center gap-2 text-[#333333] text-[16.51px] font-medium'>
+        <h2 className="text-dark-blue text-xl font-bold leading-[55px] font-helvetica">{title}</h2>
+        <p className="text-dark-gray text-[16.51px] font-helvetica font-normal leading-[21.67px]">{description}</p>
+        <Link href={learnMoreLink} className="mt-5 flex items-center gap-2 text-dark-gray text-[16.51px] font-medium">
             Learn More
             <Image src='/assets/why-choose-arrow.svg' alt='arrow' width={16} height={16} />
         </Link>
     </div>
+
+
 )
 
 const WhyChooseZeroGPT: React.FC = () => {

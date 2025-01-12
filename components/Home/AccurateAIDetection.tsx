@@ -54,7 +54,7 @@ const AccurateAIDetection: React.FC = () => {
                             </div>
                         ))}
                     </div>
-                    <button className='mt-6 sm:mt-7 bg-[#83E9FF] rounded-[30px] h-[45px] sm:h-[52px] px-7 text-dark-blue font-semibold text-base uppercase'>
+                    <button className='mt-6 sm:mt-7 bg-bright-cyan transition-all duration-300 ease-in-out hover:bg-soft-cyan hover:shadow-lg hover:text-white rounded-[30px] h-[45px] sm:h-[52px] px-7 text-dark-blue font-semibold text-base uppercase'>
                         Learn More
                     </button>
                 </div>

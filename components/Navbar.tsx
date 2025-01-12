@@ -62,12 +62,17 @@ export default function Navbar() {
                     {/* Desktop Buttons */}
                     <div className="hidden space-x-4 lg:flex items-center">
                         <LanguageSwitcher />
-                        <Link href="/signup" className="rounded-[500px] bg-white px-[22px] py-[15px] text-sm font-semibold text-[#1F3753] shadow-lg">
+                        <Link 
+                            href="/signup" 
+                            className="rounded-[500px] bg-white px-[22px] py-[15px] text-sm font-semibold text-dark-blue hover:shadow-inner  transition-all duration-300 ease-in-out shadow-lg">
                             SIGN UP
                         </Link>
-                        <Link href="/signup" className="rounded-[500px] bg-[#1F3753] px-[25px] py-[15px] text-sm font-semibold text-white shadow-lg">
+                        <Link
+                            href="/signup"
+                            className="rounded-[500px] bg-dark-blue px-[25px] py-[15px] text-sm font-semibold text-white shadow-lg transition-all duration-300 ease-in-out hover:shadow-inner border hover:text-dark-blue hover:bg-white">
                             LOGIN
                         </Link>
+
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -116,7 +121,7 @@ export default function Navbar() {
                             </Link>
                             <Link
                                 href="/login"
-                                className={`block w-full transform rounded-full bg-[#1f2937] px-6 py-2 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-gray-800 ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                                className={`block w-full transform rounded-full bg-dark-blue px-6 py-2 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-gray-800 ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
                                     }`}
                                 style={{ transitionDelay: `${(navLinks.length + 1) * 100}ms` }}
                                 onClick={() => setIsMenuOpen(false)}

@@ -50,12 +50,12 @@ const FrequentlyAskedQuestions = () => {
     };
 
     return (
-        <div className="bg-[#EDF2F7] py-10 md:py-20">
+        <div className="bg-light-blue-gray py-10 md:py-20">
             <div className="max-w-[1330px] mx-auto px-3.5 sm:px-4">
-                <h1 className="text-[25px] md:text-3xl lg:text-4xl xl:text-[40px] font-extrabold text-[#252525] uppercase text-center">
+                <h1 className="text-[25px] md:text-3xl lg:text-4xl xl:text-[40px] font-extrabold text-charcoal uppercase text-center">
                     Frequently Asked Questions
                 </h1>
-                <p className="mt-1 text-[#252525] text-sm sm:text-base font-normal sm:leading-[27px] text-center">
+                <p className="mt-1 text-charcoal text-sm sm:text-base font-normal sm:leading-[27px] text-center">
                     The most commonly asked questions that we receive at Toth-Felty
                     Insurance and our answers.
                 </p>
@@ -64,9 +64,9 @@ const FrequentlyAskedQuestions = () => {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className={`rounded-[14px]  ${openIndices.includes(index)
-                                    ? "bg-[#1D2939]"
-                                    : "bg-white border border-[#25252533]"
+                            className={`rounded-[14px] shadow-md hover:shadow-xl transition-all duration-300  ${openIndices.includes(index)
+                                    ? "bg-slate-blue"
+                                    : "bg-white border border-charcoal/30"
                                 }`}
                         >
                             <div
@@ -83,7 +83,7 @@ const FrequentlyAskedQuestions = () => {
                                 <h3
                                     className={`font-helvetica font-extrabold text-base sm:text-lg ${openIndices.includes(index)
                                             ? "text-white"
-                                            : "text-[#252525]"
+                                            : "text-charcoal"
                                         }`}
                                 >
                                     {faq.question}
@@ -105,7 +105,7 @@ const FrequentlyAskedQuestions = () => {
                                 </div>
                             </div>
                             {openIndices.includes(index) && (
-                                <div className="border-t border-[#FFFFFF33]">
+                                <div className="border-t border-white/30">
                                     <div className="p-4 sm:p-5 md:pr-[50px]">
                                         <p className="text-white text-sm sm:text-base font-normal">
                                             {faq.answer}
