@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                     </p>
                     <div className="flex items-center gap-2.5">
                         {socialLinks.map((link, index) => (
-                            <Link key={index} href={link.href}>
+                            <Link key={index} href={link.href} className="hover:scale-100 scale-110 transition-all duration-300">
                                 <Image src={link.icon} alt={link.alt} width={35} height={35} />
                             </Link>
                         ))}
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
                                 <Link
                                     key={index}
                                     href={link.href}
-                                    className="text-base font-normal"
+                                    className="text-base font-normal hover:underline underline-offset-2 transition-all duration-300"
                                 >
                                     {link.label}
                                 </Link>
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
                                 <Link
                                     key={index}
                                     href={link.href}
-                                    className="text-base font-normal"
+                                    className="text-base font-normal hover:underline underline-offset-2 transition-all duration-300"
                                 >
                                     {link.label}
                                 </Link>
@@ -149,7 +149,7 @@ const Footer: React.FC = () => {
                                 placeholder="Enter your email"
                                 className="bg-transparent placeholder:text-white/95 text-white outline-none px-4 w-full"
                             />
-                            <button className="h-[40px] bg-light-gray rounded-[30px] px-[18px] text-primary">
+                            <button className="h-[40px] hover:bg-white transition-all duration-300 bg-light-gray rounded-[30px] px-[18px] text-primary">
                                 Subscribe
                             </button>
                         </div>
