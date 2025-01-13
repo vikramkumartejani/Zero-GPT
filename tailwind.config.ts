@@ -56,6 +56,7 @@ const config: Config = {
       fontFamily: {
         'helvetica': ['Helvetica', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
+        'work-sans': ['Work Sans', 'sans-serif'],
       },
       boxShadow: {
         'custom-shadow': '0px 2.06px 17.55px 0px #00000026',
