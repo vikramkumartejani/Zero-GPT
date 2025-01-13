@@ -1,4 +1,4 @@
-import QuestionBusinessInquiry from '@/components/Contact/QuestionBusinessInquiry'
+import QuestionBusinessInquiry from '@/components/ContactUs/QuestionBusinessInquiry'
 import React from 'react'
 
 const contact = () => {
