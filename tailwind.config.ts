@@ -15,6 +15,8 @@ const config: Config = {
         'light-sky': '#ECF9FE',
         "customBlue": '#E5F4FF8F',
         'very-light-gray': '#F6F6F6',
+        'light-grayish-blue': '#F1F3F6',
+        'custom-light-blue': '#C5EBF9',
         "background": "linear-gradient(270deg, #D9EEFF 0%, #A8D8FF 100%)",
       },
       colors:{
@@ -47,6 +49,9 @@ const config: Config = {
         'vibrant-blue': '#0066B2',
         'blue-sapphire': '#16469D',
         'grayish-white': '#F7F7F7',
+        'dark-ash-gray': '#3B3A3B',
+        'custom-light-gray': '#BCBCBC',
+
       },
       fontFamily: {
         'helvetica': ['Helvetica', 'sans-serif'],

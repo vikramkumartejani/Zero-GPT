@@ -15,7 +15,7 @@ interface SocialLink {
 
 const Footer: React.FC = () => {
     const quickLinks: LinkItem[] = [
-        { href: "/about", label: "About" },
+        { href: "/about-us", label: "About" },
         { href: "/services", label: "Services" },
         { href: "/resource", label: "Resource" },
         { href: "/blog", label: "Blog" },
