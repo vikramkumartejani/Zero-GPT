@@ -16,7 +16,7 @@ const contact = () => {
                         Contact Us
                     </h1>
                     <p className="mt-3.5 text-dark-blue-gray text-sm sm:text-base font-medium max-w-[623px] mx-auto">
-                        Want to provide feedback on your experience, or have any other matter you'd like to discuss, we encourage you to get in touch with us
+                        Want to provide feedback on your experience, or have any other matter you&lsquo;d like to discuss, we encourage you to get in touch with us
                     </p>
                 </div>
             </div>
