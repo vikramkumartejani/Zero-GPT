@@ -15,6 +15,7 @@ const config: Config = {
         'light-sky': '#ECF9FE',
         "customBlue": '#E5F4FF8F',
         'very-light-gray': '#F6F6F6',
+        "background": "linear-gradient(270deg, #D9EEFF 0%, #A8D8FF 100%)",
       },
       colors:{
         "white": "#FFFFFF",
