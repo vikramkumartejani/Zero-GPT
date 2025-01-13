@@ -45,6 +45,8 @@ const config: Config = {
         'soft-gray': '#DFDFDF',
         'gray-600': '#565656',
         'vibrant-blue': '#0066B2',
+        'blue-sapphire': '#16469D',
+        'grayish-white': '#F7F7F7',
       },
       fontFamily: {
         'helvetica': ['Helvetica', 'sans-serif'],
