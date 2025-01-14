@@ -15,8 +15,8 @@ const navLinks: NavLink[] = [
     { name: 'ABOUT', href: '/about-us' },
     { name: 'SERVICES', href: '/services' },
     { name: 'RESOURCES', href: '/resources' },
-    { name: 'BLOGS', href: '/blogs' },
-    { name: 'CONTACT US', href: '/contact' },
+    { name: 'BLOGS', href: '/blog' },
+    { name: 'CONTACT US', href: '/contact-us' },
 ]
 
 export default function Navbar() {
