@@ -59,7 +59,7 @@ export default function BlogPost() {
   return (
     <main className="max-w-[1320px] sm:px-5 px-3.5 mx-auto w-full pt-[100px] sm:pt-[150px] pb-10">
       <Link
-        href="/blogs"
+        href="/blog"
         className="flex items-center gap-2 mb-4 text-main-clr text-lg font-work-sans"
       >
         <Image

@@ -62,7 +62,7 @@ const BlogsCard: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[22px]">
                 {currentBlogs.map((blog) => (
                     <Link
-                        href={`/blogs/${blog.id}`}
+                        href={`/blog/${blog.id}`}
                         key={blog.id}
                         className="relative bg-white border-2 border-[#17171726] rounded-[20px] pb-[25px] py-2.5 sm:py-3.5 px-2 sm:px-[12px] hover:shadow-xl transition-all duration-300"
                     >
