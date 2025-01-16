@@ -14,8 +14,8 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
     { name: 'ABOUT', href: '/about-us' },
-    { 
-        name: 'SERVICES', 
+    {
+        name: 'SERVICES',
         href: '/services',
         dropdown: [
             { name: 'AI Content Detector', href: '/services/ai-content-detector' },
@@ -113,8 +113,8 @@ export default function Navbar() {
                     {/* Desktop Buttons */}
                     <div className="hidden space-x-4 lg:flex items-center">
                         <LanguageSwitcher />
-                        <Link 
-                            href="/signup" 
+                        <Link
+                            href="/signup"
                             className="rounded-[500px] bg-white px-[22px] py-[15px] text-sm font-semibold text-dark-blue hover:shadow-inner  transition-all duration-300 ease-in-out shadow-lg">
                             SIGN UP
                         </Link>
@@ -152,9 +152,8 @@ export default function Navbar() {
                                     <>
                                         <button
                                             onClick={() => toggleDropdown(link.name)}
-                                            className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 ${
-                                                isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
-                                            }`}
+                                            className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                                                }`}
                                             style={{ transitionDelay: `${index * 100}ms` }}
                                         >
                                             {link.name}
@@ -166,9 +165,8 @@ export default function Navbar() {
                                                     <Link
                                                         key={subLink.name}
                                                         href={subLink.href}
-                                                        className={`block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 ${
-                                                            isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
-                                                        }`}
+                                                        className={`block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                                                            }`}
                                                         style={{ transitionDelay: `${(index * 100) + ((subIndex + 1) * 50)}ms` }}
                                                         onClick={() => setIsMenuOpen(false)}
                                                     >
@@ -181,9 +179,8 @@ export default function Navbar() {
                                 ) : (
                                     <Link
                                         href={link.href}
-                                        className={`block transform rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 ${
-                                            isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
-                                        }`}
+                                        className={`block transform rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                                            }`}
                                         style={{ transitionDelay: `${index * 100}ms` }}
                                         onClick={() => setIsMenuOpen(false)}
                                     >

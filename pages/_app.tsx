@@ -1,11 +1,15 @@
+'use client'
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import "../styles/globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { usePathname } from 'next/navigation';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const pathname = usePathname();
+  const isDashboardPage = pathname?.startsWith('/dashboard');
   return (
     <>
       <Head>
@@ -14,11 +18,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="ZeroGPT - AI Detection Tool" />
       </Head>
       <LanguageProvider>
-        <Navbar />
+        {!isDashboardPage && <Navbar />}
         <main>
           <Component {...pageProps} />
         </main>
-        <Footer />
+        {!isDashboardPage && <Footer />}
       </LanguageProvider>
     </>
   );

@@ -22,6 +22,7 @@ const config: Config = {
       colors:{
         "white": "#FFFFFF",
         "black": "#000000",
+        "gray-olive": "#727172",
         "primary": "#151515",
         "secondary": "#020203",
         "dark-blue": "#1F3753",
