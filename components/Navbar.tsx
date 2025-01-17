@@ -159,22 +159,24 @@ export default function Navbar() {
                                             {link.name}
                                             <ChevronDown className="ml-1 h-4 w-4" />
                                         </button>
-                                        {activeDropdown === link.name && (
-                                            <div className="pl-6">
-                                                {link.dropdown.map((subLink, subIndex) => (
-                                                    <Link
-                                                        key={subLink.name}
-                                                        href={subLink.href}
-                                                        className={`block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
-                                                            }`}
-                                                        style={{ transitionDelay: `${(index * 100) + ((subIndex + 1) * 50)}ms` }}
-                                                        onClick={() => setIsMenuOpen(false)}
-                                                    >
-                                                        {subLink.name}
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        )}
+                                        <div className="pl-6 pointer-events-auto">
+                                            {link.dropdown.map((subLink, subIndex) => (
+                                                <Link
+                                                    key={subLink.name}
+                                                    href={subLink.href}
+                                                    className={`block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 ${
+                                                        isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                                                    }`}
+                                                    style={{ transitionDelay: `${(index * 100) + ((subIndex + 1) * 50)}ms` }}
+                                                    onClick={() => {
+                                                        setIsMenuOpen(false)
+                                                        setActiveDropdown(null)
+                                                    }}
+                                                >
+                                                    {subLink.name}
+                                                </Link>
+                                            ))}
+                                        </div>
                                     </>
                                 ) : (
                                     <Link
