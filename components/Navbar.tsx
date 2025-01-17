@@ -18,8 +18,8 @@ const navLinks: NavLink[] = [
         name: 'SERVICES',
         href: '/services',
         dropdown: [
-            { name: 'AI Content Detector', href: '/services/ai-content-detector' },
-            { name: 'Chat GPT Detector', href: '/services/chat-gpt-detector' }
+            { name: 'AI Content Detector', href: '/ai-content-detector' },
+            { name: 'Chat GPT Detector', href: '/chat-gpt-detector' }
         ]
     },
     { name: 'PRICING', href: '/pricing' },

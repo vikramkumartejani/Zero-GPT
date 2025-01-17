@@ -5,7 +5,7 @@ import FrequentlyAskedQuestions from "@/components/FrequentlyAskedQuestions";
 import Hero from "@/components/Home/Hero";
 import OurBlogs from "@/components/Home/OurBlogs";
 import ScienceBehindZeroGPT from "@/components/Home/ScienceBehindZeroGPT";
-import StartDetectingNow from "@/components/Home/StartDetectingNow";
+import StartDetectingNow from "@/components/StartDetectingNow";
 import WhyChooseZeroGPT from "@/components/Home/WhyChooseZeroGPT";
 
 export default function Home() {
