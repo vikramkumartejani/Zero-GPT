@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function LoginPage() {
     return (
-        <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
+        <div className="min-h-screen w-full flex items-center justify-center bg-[#F2F5F8]">
             <div className="w-full max-w-[580px] bg-white rounded-2xl py-10 sm:py-[56px] px-4 sm:px-8 mx-4 my-4" style={{ boxShadow: "0px 2px 7px 0px #2525250A" }}>
                 <div className="flex justify-center mb-10 sm:mb-[60px]">
                     <div className="flex items-center gap-2">
