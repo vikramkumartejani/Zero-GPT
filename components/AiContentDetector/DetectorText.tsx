@@ -10,8 +10,8 @@ interface Option {
 const options: Option[] = [
     { id: 1, language: "English" },
     { id: 2, language: "French" },
-    { id:3, language: "Spanish" },
-    { id:4, language: "German" },
+    { id: 3, language: "Spanish" },
+    { id: 4, language: "German" },
 ];
 
 export default function DetectorText() {
@@ -23,7 +23,9 @@ export default function DetectorText() {
             <div className="flex sm:items-center sm:flex-row flex-col gap-2 text-sm">
                 <div className="flex flex-wrap gap-4">
                     {options.map((option) => (
-                        <h3 className="text-[#414952E5] font-normal text-base leading-[28px]">{option.language}</h3>
+                        <h3 key={option.id} className="text-[#414952E5] font-normal text-base leading-[28px]">
+                            {option.language}
+                        </h3>
                     ))}
                 </div>
             </div>
@@ -45,3 +47,4 @@ export default function DetectorText() {
         </div>
     );
 }
+
