@@ -1,6 +1,6 @@
 'use client'
 import AIDetectorsVSPlagiarismCheckers from '@/components/AiContentDetector/AIDetectorsVSPlagiarismCheckers';
-import DetectorText from '@/components/AiContentDetector/DetectorText';
+import DetectorText from '@/components/DetectorText';
 import OurAIDetectorIsPerfectFor from '@/components/AiContentDetector/OurAIDetectorIsPerfectFor';
 import WhyUseScribbrsAIDetector from '@/components/AiContentDetector/WhyUseScribbrsAIDetector';
 import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions';

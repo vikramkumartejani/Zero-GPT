@@ -1,6 +1,6 @@
 'use client'
 import AIDetectorsVSPlagiarismCheckers from '@/components/ChatGPTDetector/AIDetectorsVSPlagiarismCheckers';
-import DetectorText from '@/components/AiContentDetector/DetectorText';
+import DetectorText from '@/components/DetectorText';
 import OurAIDetectorIsPerfectFor from '@/components/ChatGPTDetector/OurAIDetectorIsPerfectFor';
 import WhyUseScribbrsAIDetector from '@/components/ChatGPTDetector/WhyUseScribbrsAIDetector';
 import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions';
