@@ -47,7 +47,7 @@ const Dashboard = () => {
     }
 
     return (
-        <div className='w-full flex'>
+        <div className='w-full flex flex-col'>
             <ADS />
             <div className='w-full flex flex-col' style={{ backgroundImage: "url('/assets/dashboard-bg.png')", backgroundPosition: "top" }}>
                 <Header />
