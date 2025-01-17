@@ -1,4 +1,11 @@
 'use client'
+import AIDetectorsVSPlagiarismCheckers from '@/components/ChatGPTDetector/AIDetectorsVSPlagiarismCheckers';
+import DetectorText from '@/components/AiContentDetector/DetectorText';
+import OurAIDetectorIsPerfectFor from '@/components/ChatGPTDetector/OurAIDetectorIsPerfectFor';
+import WhyUseScribbrsAIDetector from '@/components/ChatGPTDetector/WhyUseScribbrsAIDetector';
+import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions';
+import StartDetectingNow from '@/components/StartDetectingNow';
+import React from 'react'
 
 const ChatGPTDetector = () => {
     return (
@@ -13,6 +20,18 @@ const ChatGPTDetector = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="relative z-40 px-4 -mt-40">
+                <div className="max-w-[1100px] mx-auto">
+                    <DetectorText />
+                </div>
+            </div>
+
+            <WhyUseScribbrsAIDetector/>
+            <OurAIDetectorIsPerfectFor/>
+            <AIDetectorsVSPlagiarismCheckers/>
+            <FrequentlyAskedQuestions/>
+            <StartDetectingNow/>
         </>
     );
 }
