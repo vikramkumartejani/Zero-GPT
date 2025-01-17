@@ -9,7 +9,9 @@ import Footer from "../components/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   const pathname = usePathname();
-  const isDashboardPage = pathname?.startsWith('/dashboard');
+  const excludedPages = ['/dashboard', '/login', "/signup"];
+  const isExcludedPage = excludedPages.some(path => pathname?.startsWith(path));
+
   return (
     <>
       <Head>
@@ -18,11 +20,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="ZeroGPT - AI Detection Tool" />
       </Head>
       <LanguageProvider>
-        {!isDashboardPage && <Navbar />}
+        {!isExcludedPage && <Navbar />}
         <main>
           <Component {...pageProps} />
         </main>
-        {!isDashboardPage && <Footer />}
+        {!isExcludedPage && <Footer />}
       </LanguageProvider>
     </>
   );
