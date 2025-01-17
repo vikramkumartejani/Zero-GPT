@@ -55,7 +55,7 @@ const Dashboard = () => {
                 <Header />
                 <div className='py-6 flex items-start justify-between gap-3.5 sm:gap-5'>
                     <Sidebar />
-                    <div className='lg:mr-0 mr-0 sm:mr-4 relative h-screen w-full bg-white border border-[#E5E7EB] rounded-xl'>
+                    <div className='lg:mr-0 mr-0 sm:mr-4 relative pb-20 w-full bg-white border border-[#E5E7EB] rounded-xl'>
                         <div className='flex items-center justify-between py-3.5 sm:py-5 px-3.5 sm:px-8 w-full border-b bg-[#FFFFFF01]' style={{ boxShadow: "0px 4px 4px -4px #0000001A" }}>
                             <button
                                 onClick={handleButtonClick}
@@ -93,7 +93,7 @@ const Dashboard = () => {
                             />
                         </div>
 
-                        <div className='w-full absolute bottom-[15px] sm:bottom-[30px] px-3.5 sm:px-8 flex sm:flex-row flex-col gap-3.5 sm:items-center justify-between'>
+                        <div className='mt-10 w-full absolute bottom-[15px] sm:bottom-[30px] px-3.5 sm:px-8 flex sm:flex-row flex-col gap-3.5 sm:items-center justify-between'>
                             <h3 className='text-dark-ash-gray text-sm font-medium'><span>0</span>/<span>250</span> character minimum</h3>
                             <button className='border border-gray-olive text-dark-ash-gray py-3 sm:py-2.5 hover:shadow-2xl hover:text-white transition-all duration-300 hover:bg-main-clr px-3.5 rounded-full font-medium text-base sm:text-sm leading-[16px] tracking-[0.3px]'>Upgrade Scan</button>
                         </div>
