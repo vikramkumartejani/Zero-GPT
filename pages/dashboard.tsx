@@ -47,8 +47,10 @@ const Dashboard = () => {
     }
 
     return (
-        <div className='w-full flex flex-col'>
-            <ADS />
+        <div className='w-full '>
+            <div className='lg:block hidden'>
+                <ADS />
+            </div>
             <div className='w-full flex flex-col' style={{ backgroundImage: "url('/assets/dashboard-bg.png')", backgroundPosition: "top" }}>
                 <Header />
                 <div className='py-6 flex items-start justify-between gap-3.5 sm:gap-5'>
@@ -101,7 +103,9 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            <div className='lg:block hidden'>
             <ADS />
+            </div>
         </div>
     )
 }
