@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 import TextDetector from "./TextDetector"
 import { useLanguage } from '../../contexts/LanguageContext'
-import DetectorText from '../DetectorText'
 
 const Hero = () => {
     const { t } = useLanguage()
@@ -68,8 +67,7 @@ const Hero = () => {
 
             <div className="relative z-40 px-4 -mt-40">
                 <div className="max-w-[1100px] mx-auto">
-                    {/* <TextDetector /> */}
-                    <DetectorText/>
+                    <TextDetector />
                 </div>
             </div>
         </>

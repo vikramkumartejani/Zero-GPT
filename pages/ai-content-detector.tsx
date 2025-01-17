@@ -1,11 +1,11 @@
 'use client'
 import AIDetectorsVSPlagiarismCheckers from '@/components/AiContentDetector/AIDetectorsVSPlagiarismCheckers';
-import DetectorText from '@/components/DetectorText';
 import OurAIDetectorIsPerfectFor from '@/components/AiContentDetector/OurAIDetectorIsPerfectFor';
 import WhyUseScribbrsAIDetector from '@/components/AiContentDetector/WhyUseScribbrsAIDetector';
 import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions';
 import StartDetectingNow from '@/components/StartDetectingNow';
 import React from 'react'
+import TextDetector from '@/components/Home/TextDetector';
 
 const AiContentDetector = () => {
     return (
@@ -23,7 +23,7 @@ const AiContentDetector = () => {
 
             <div className="relative z-40 px-4 -mt-40">
                 <div className="max-w-[1100px] mx-auto">
-                    <DetectorText />
+                    <TextDetector />
                 </div>
             </div>
             <WhyUseScribbrsAIDetector/>
