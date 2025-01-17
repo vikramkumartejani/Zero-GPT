@@ -47,7 +47,7 @@ const Dashboard = () => {
     }
 
     return (
-        <div className='w-full '>
+        <div className='w-full flex '>
             <div className='lg:block hidden'>
                 <ADS />
             </div>
