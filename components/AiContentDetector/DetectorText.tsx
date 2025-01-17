@@ -1,19 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
-import { ArrowRight, ArrowUpFromLine, Upload } from "lucide-react";
-import Image from "next/image";
+import React from "react";
 
 interface Option {
-    id: string;
+    id: number;
     language: string;
 }
 
 const options: Option[] = [
-    { id: "english", language: "English" },
-    { id: "french", language: "French" },
-    { id: "spanish", language: "Spanish" },
-    { id: "german", language: "German" },
+    { id: 1, language: "English" },
+    { id: 2, language: "French" },
+    { id:3, language: "Spanish" },
+    { id:4, language: "German" },
 ];
 
 export default function DetectorText() {
