@@ -89,7 +89,7 @@ const Dashboard = () => {
                         <div className='px-3.5 sm:px-8 py-4'>
                             <textarea
                                 placeholder='Enter the text you want to scan'
-                                className='w-full h-[500px] outline-none resize-none placeholder:text-gray-olive text-sm font-normal leading-[24px] tracking-[0.3px]'
+                                className='w-full h-[340px] outline-none resize-none placeholder:text-gray-olive text-sm font-normal leading-[24px] tracking-[0.3px]'
                             />
                         </div>
 
