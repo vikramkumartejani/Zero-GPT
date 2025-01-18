@@ -10,6 +10,8 @@ interface NavLink {
     name: string
     href: string
     dropdown?: NavLink[]
+    title?: string
+    icon?: string
 }
 
 const navLinks: NavLink[] = [
@@ -18,8 +20,8 @@ const navLinks: NavLink[] = [
         name: 'SERVICES',
         href: '/services',
         dropdown: [
-            { name: 'AI Content Detector', href: '/ai-content-detector' },
-            { name: 'Chat GPT Detector', href: '/chat-gpt-detector' }
+            { name: 'AI Content Detector', href: '/ai-content-detector', title: "Scan for potential AI text in any doc", icon: "/assets/aiDetectorIcon.webp" },
+            { name: 'Chat GPT Detector', href: '/chat-gpt-detector', title: "Scan for potential AI text in any doc", icon: "/assets/advancedScanIcon.webp" }
         ]
     },
     { name: 'PRICING', href: '/pricing' },
@@ -91,16 +93,25 @@ export default function Navbar() {
                                     </Link>
                                 )}
                                 {link.dropdown && activeDropdown === link.name && (
-                                    <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                                        <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                                    <div className="absolute -left-[140px] mt-2 w-[350px] rounded-xl shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                                        <div className="px-8 py-6" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                                            <h2 className='text-lg text-charcoal/80 font-medium'>Services</h2>
                                             {link.dropdown.map((subLink) => (
                                                 <Link
                                                     key={subLink.name}
                                                     href={subLink.href}
-                                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                                                    className="flex items-center gap-2 mt-6 text-sm text-gray-700 scale-100 hover:scale-105 transition-all duration-300"
                                                     role="menuitem"
                                                 >
-                                                    {subLink.name}
+                                                    <Image src={subLink.icon ?? '/default-icon-path.webp'} alt='aiDetectorIcon' width={34} height={34} />
+                                                    <div className='flex flex-col items-start'>
+                                                        <h2 className='font-medium mb-0.5'>
+                                                            {subLink.name}
+                                                        </h2>
+                                                        <h3>
+                                                            {subLink.title}
+                                                        </h3>
+                                                    </div>
                                                 </Link>
                                             ))}
                                         </div>
@@ -164,9 +175,8 @@ export default function Navbar() {
                                                 <Link
                                                     key={subLink.name}
                                                     href={subLink.href}
-                                                    className={`block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 hover:bg-gray-100 hover:text-gray-900 ${
-                                                        isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
-                                                    }`}
+                                                    className={`block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-all duration-300 ${isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                                                        }`}
                                                     style={{ transitionDelay: `${(index * 100) + ((subIndex + 1) * 50)}ms` }}
                                                     onClick={() => {
                                                         setIsMenuOpen(false)
